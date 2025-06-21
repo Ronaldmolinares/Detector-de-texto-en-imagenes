@@ -1,4 +1,4 @@
-Collecting workspace information# Proyecto de Extracción de Coordenadas desde Imágenes
+## Proyecto de Extracción de Coordenadas desde Imágenes
 
 Este proyecto extrae coordenadas geográficas desde capturas de pantalla de WhatsApp o cualquier imagen que contenga información de geolocalización en formato texto. Utiliza OCR (Reconocimiento Óptico de Caracteres) para extraer el texto de las imágenes y luego procesa ese texto para identificar y formatear las coordenadas en un formato estándar.
 
