@@ -211,22 +211,6 @@ def coordenada_normalizada(texto):
     except Exception as e:
         print(f"Error en cuarto intento: {e}")
     
-    # Quinto intento: caso específico para 10227 con diversos separadores
-    try:
-        # Si el texto contiene 10227 o 70927, sabemos que es una coordenada específica
-        if any(x in texto for x in ["1022", "1027", "7092", "10*27"]):
-            # Extraer solo los dígitos para los segundos
-            sec_match = re.search(r'[\'"](\d+)[.,](\d+)[\'"]', texto)
-            if sec_match:
-                lat_sec = f"{sec_match.group(1)},{sec_match.group(2)}"
-                # Buscar los segundos para longitud
-                lon_sec_match = re.search(r'[WwOo][^\d]*?(\d+)[.,](\d+)', texto)
-                lon_sec = "22,0" if not lon_sec_match else f"{lon_sec_match.group(1)},{lon_sec_match.group(2)}"
-                
-                return f'10°27\'{lat_sec}"N 74°36\'{lon_sec}"W'
-    except Exception as e:
-        print(f"Error en quinto intento: {e}")
-    
     return "Coordenadas no encontradas"
 
 with open(archivo_entrada, "r", encoding="utf-8") as f_in, open(archivo_salida, "w", encoding="utf-8") as f_out:
