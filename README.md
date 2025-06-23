@@ -37,7 +37,7 @@ El script extraer_coordenadas.py procesa todas las imágenes en la carpeta image
 El script formatear_texto_ocr.py analiza el texto extraído y utiliza expresiones regulares para:
 - Identificar patrones de coordenadas geográficas
 - Manejar diferentes formatos y errores típicos del OCR
-- Convertir las coordenadas al formato estándar: `XX°XX'XX.XXXXX"N XX°XX'XX.XXXXX"W`
+- Convertir las coordenadas al formato estándar: `XX°XX'XX.XXXXX"N XX°XX'XX.XXXXX"W` o 
 
 ## Uso
 
@@ -66,7 +66,6 @@ La salida formateada será:
 
 ## Características
 
-- **Robustez**: Maneja diferentes formatos y errores comunes de OCR
 - **Patrones especiales**: Incluye casos específicos para manejar diferentes estilos de formato en el texto extraído
 - **Normalización**: Convierte automáticamente todas las coordenadas a un formato estándar
 - **Procesamiento por lotes**: Procesa múltiples imágenes en una sola ejecución
@@ -83,5 +82,3 @@ La salida formateada será:
 - Crear una interfaz gráfica para facilitar el uso
 
 ---
-
-Desarrollado para procesamiento automático de coordenadas desde imágenes de WhatsApp.

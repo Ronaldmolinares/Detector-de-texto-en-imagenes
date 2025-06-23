@@ -1,8 +1,5 @@
 import re
 
-archivo_entrada = "textos_easyocr.txt"
-archivo_salida = "coordenadas_formateadas.txt"
-
 def normalizar_coordenada(texto):
     """Normaliza y extrae coordenadas en formato estándar del texto OCR"""
     # Normalizar texto
