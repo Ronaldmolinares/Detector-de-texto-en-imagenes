@@ -75,10 +75,4 @@ La salida formateada será:
 - El OCR puede tener problemas con imágenes de baja calidad o con texto poco claro
 - Algunas coordenadas con formatos muy inusuales podrían no ser detectadas correctamente
 
-## Consideraciones para Mejorar
-
-- Agregar soporte para más formatos de coordenadas
-- Implementar validación geográfica para coordenadas
-- Crear una interfaz gráfica para facilitar el uso
-
 ---
