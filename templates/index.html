@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extractor de Coordenadas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/components.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📸 Extractor de Coordenadas OCR</h1>
+        </header>
+        
+        <main>
+            <!-- Área de Carga -->
+            <section class="upload-section" id="uploadSection">
+                <div class="upload-icon">📁</div>
+                <div class="upload-text">
+                    Arrastra y suelta tus imágenes aquí<br>
+                    o haz clic para seleccionar archivos
+                </div>
+                <input type="file" id="fileInput" class="file-input" multiple accept="image/*">
+                <button class="upload-btn" id="uploadBtn">
+                    Seleccionar Imágenes
+                </button>
+            </section>
+
+            <!-- Barra de Progreso -->
+            <section class="progress-container" id="progressContainer">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text" id="progressText">Procesando...</div>
+            </section>
+
+            <!-- Resultados -->
+            <section class="results-section" id="resultsSection">
+                <div id="imageResults"></div>
+                
+                <div class="actions">
+                    <button class="btn btn-primary" id="processNewBtn">
+                        🔄 Procesar Nuevas Imágenes
+                    </button>
+                    <button class="btn btn-success" id="downloadAllBtn">
+                        💾 Descargar Todo el Texto
+                    </button>
+                    <button class="btn btn-secondary" id="copyAllBtn">
+                        📋 Copiar Todo el Texto
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Mensajes -->
+        <div id="messageContainer"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

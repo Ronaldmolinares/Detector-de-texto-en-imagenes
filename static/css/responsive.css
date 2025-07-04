@@ -1,0 +1,43 @@
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .upload-section {
+        padding: 20px;
+    }
+    
+    .result-item {
+        flex-direction: column;
+    }
+    
+    .result-image {
+        flex: 0 0 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .upload-icon {
+        font-size: 36px;
+    }
+    
+    .progress-container, 
+    .results-section {
+        padding: 15px;
+    }
+}
